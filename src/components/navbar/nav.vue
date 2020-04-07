@@ -20,11 +20,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .nav {
+        position: fixed;
         color: #1a1a1d;
         width: 100%;
         height: 3rem;
         background-color: #fcfcfc;
-        margin-bottom: 2rem;
         border-bottom: 1px solid #dddddd;
     }
 

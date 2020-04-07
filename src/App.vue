@@ -24,7 +24,7 @@ export default {
 html, body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
-  height: 100%;
+  height: 100vw;
   background-color: white;
 }
 
@@ -45,6 +45,6 @@ body::-webkit-scrollbar-thumb {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #38383a;
-  height: 100%;
+  height: 100ù;
 }
 </style>
