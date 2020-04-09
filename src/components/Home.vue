@@ -1,5 +1,23 @@
 <template>
   <div class="home">
+    <div class="second-col">
+      <div class="summary">
+        <div class="items">
+          <div class="circle" id="first"></div>
+          <span>Who am I ?</span>
+        </div>
+        <div class="vertical-line1"></div>
+        <div class="items">
+          <div class="circle" id="second"></div>
+          <span>Portfolio</span>
+        </div>
+        <div class="vertical-line2"></div>
+        <div class="items">
+          <div class="circle" id="third"></div>
+          <span>Hard Skills</span>
+        </div>
+      </div>
+    </div>
     <div class="main-col">
       <div>
         <h1 id="main-title">Who am I ?</h1>
@@ -71,20 +89,6 @@
         </p>
       </div>
     </div>
-    <div class="second-col">
-      <div class="summary">
-        <div class="circle" id="first"></div>
-        <div class="vertical-line"></div>
-        <div class="circle" id="second"></div>
-        <div class="vertical-line"></div>
-        <div class="circle" id="third"></div>
-      </div>
-      <div class="summary-text">
-        <span class="items">Who am I ?</span>
-        <span class="items">Portfolio</span>
-        <span class="items">Hard Skills</span>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -106,19 +110,22 @@ export default {
 
 .main-col {
   margin: auto;
+  margin-top: 10rem;
   height: 100%;
   width: 50vw;
 }
 .second-col {
-  margin-top: 3rem;
+  padding-top: 3.2rem;
   position: fixed;
   /* margin-left: auto; */
-  left: 85%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100%;
-  width: 15vw;
-  border-left: 1px solid #dddddd;
+  align-items: center;
+  height: 12%;
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+  background-color: white;
 }
 
 #main-title {
@@ -144,37 +151,50 @@ export default {
 }
 
 .summary {
-  margin-top: 3rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .summary-text {
-  margin-top: 3rem;
-  padding-top: 0.5rem;
   display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  width: 100%;
 }
 
 .items {
-  margin-left: 1rem;
-  margin-bottom: 11rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .circle {
+  margin: auto;
+  margin-bottom: 1rem;
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
   border: 1px solid #dddddd;
 }
 
-.vertical-line {
-  height: 10rem;
-  border-left: 1px solid #dddddd;
+.vertical-line1 {
+  position: absolute;
+  left: 51%;
+  bottom: 44%;
+  width: 37.5rem;
+  border-bottom: 1px solid #dddddd;
+}
+
+.vertical-line2 {
+  position: absolute;
+  left: 17.8%;
+  bottom: 44%;
+  width: 37.6rem;
+  border-bottom: 1px solid #dddddd;
 }
 
 #first {

@@ -25,7 +25,8 @@ export default {
         width: 100%;
         height: 3rem;
         background-color: #fcfcfc;
-        border-bottom: 1px solid #dddddd;
+        border-bottom: 1px solid #924BD8;
+        z-index: 999;
     }
 
     #logo-link {
